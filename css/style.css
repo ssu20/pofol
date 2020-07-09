@@ -19,9 +19,9 @@
 /* 수정 */
     @media (max-width: 991.98px) {
         
-        .aboutme_more .inner{overflow-y:auto}
+        .aboutme_more .inner{overflow-y:auto; margin-bottom: 2rem}
         .inner .profile_img, .inner .profile_wrap{float: none; width: 100%;}
-        .profile_wrap{padding: 5%; height: 400px}
+        .profile_wrap{padding: 5%; height: auto}
        
     }
 
@@ -73,14 +73,14 @@ footer > .container > #next-section{padding-top: 0; padding-bottom: 4rem}
 .aboutme_more .x_btn{font-size: 1.5rem; color: #DCF235; float: right; margin: 10px 15px; border: none; outline: none; background: none}
 .aboutme_more .x_btn:after{content: '';display: block; clear: both}
 .aboutme_more .titles{text-align: center; margin: 4rem 2rem 2rem 2rem}
-.profile_img, .profile_wrap{width: 50%;float: left; box-sizing: border-box;}
+.profile_img, .profile_wrap{width: 40%;float: left; box-sizing: border-box;  margin: 0 2.5%; margin-bottom: 2rem;}
 .profile_wrap > div h5{color:#766e6e;font-size: 18px; border-bottom: 1px solid #e1e1e1; font-weight: bold; padding-bottom: 10px; width: 80%;}
 .profile_wrap p{color:#4e4e4e;margin-top: 10px;font-size: 14px;}
 .profile_wrap table{margin-top: 10px;color: #4e4e4e;font-size: 14px;}
 .profile_wrap td:first-child{color: #aaaaaa; padding-right: 20px; font-size: 14px;}
 .profile_wrap>div{margin-bottom: 5%;}
 .aboutme_more .center{margin: 0 auto; width: 40%; text-align: center;}
-.aboutme_more .profile_img img{width: 100%; min-width: 180px; max-width: 400px; text-align: center;}
+.aboutme_more .profile_img img{width: 90%; min-width: 180px; max-width: 400px; text-align: center;}
 .aboutme_bg{position: fixed; z-index: 9998; top: 0; margin: 0 auto; width: 100%; height: 1080px; background: rgba(0,0,0,0.5);max-height: 100%; overflow-y: hidden; display:none}
 
 
