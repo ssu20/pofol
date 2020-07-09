@@ -39,6 +39,7 @@
 .text-slider{color: #fff}
 .text-slider-items{display: none;}
 
+#about-us-section{overflow: hidden}
 .align-self-center .mt-4 button{border: none; background: none; outline: none}
 
 .benner_set{margin-top: 7rem;}
