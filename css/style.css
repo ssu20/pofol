@@ -27,11 +27,11 @@
     }
 
     @media (max-width: 768px) {
-        .img-overlap {height: 700px; margin-bottom: -80%;}
-        .block__62849 .row .block__16443{padding: 30px 10px;height: 290px}
+        .img-overlap {height: 700px; margin-bottom: -50%;}
+        .block__62849 .row .block__16443{padding: 30px 10px;height: 270px}
         .block__62849 .row .col-6:nth-child(2), .block__62849 .row .col-6:nth-child(4), .block__62849 .row .col-6:nth-child(6){padding-left: 0}
         #posts .col-6{padding:5px; box-sizing: border-box; }
-        
+        #posts .mb-4, #posts .my-4 {margin-bottom: 0 !important; }
     /*서브*/
         .jm-sticky-top{padding-top: 3rem}
         
