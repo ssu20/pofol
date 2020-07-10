@@ -19,10 +19,11 @@
 /* 수정 */
     @media (max-width: 991.98px) {
         
-        .aboutme_more .inner{overflow-y:auto; margin-bottom: 2rem}
+        div.aboutme_more{width: 100%; height: 100%; margin: 0}
+        .aboutme_more .inner{overflow-y:auto; margin-bottom: 2rem; height: 70% ;}
         .inner .profile_img, .inner .profile_wrap{float: none; width: 100%;}
-        .profile_wrap{padding: 5%; height: auto}
-       
+        
+        
     }
 
     @media (max-width: 768px) {
@@ -69,7 +70,8 @@ footer > .container > #next-section{padding-top: 0; padding-bottom: 4rem}
 
 
 
-.aboutme_more{position: fixed; width: 70%; height: 800px; margin: 5% auto;background: #fff; top:0;left: 0; right: 0;z-index: 9999;max-height: 100%;overflow-y: hidden;display:none}
+.aboutme_more{position: fixed; width: 60%; height: 80%; margin: 5% auto;background: #fff; top:0;left: 0; right: 0;z-index: 9999;max-height: 100%;overflow-y: hidden;display:none}
+.aboutme_more .inner{padding: 0 10%}
 .aboutme_more .x_btn{font-size: 1.5rem; color: #DCF235; float: right; margin: 10px 15px; border: none; outline: none; background: none}
 .aboutme_more .x_btn:after{content: '';display: block; clear: both}
 .aboutme_more .titles{text-align: center; margin: 4rem 2rem 2rem 2rem}
@@ -79,8 +81,8 @@ footer > .container > #next-section{padding-top: 0; padding-bottom: 4rem}
 .profile_wrap table{margin-top: 10px;color: #4e4e4e;font-size: 14px;}
 .profile_wrap td:first-child{color: #aaaaaa; padding-right: 20px; font-size: 14px;}
 .profile_wrap>div{margin-bottom: 5%;}
-.aboutme_more .center{margin: 0 auto; width: 40%; text-align: center;}
-.aboutme_more .profile_img img{width: 90%; min-width: 180px; max-width: 400px; text-align: center;}
+.aboutme_more .center{margin: 0 auto; width: 100%; text-align: center;}
+.aboutme_more .profile_img img{width: 90%; max-width: 200px; text-align: center;}
 .aboutme_bg{position: fixed; z-index: 9998; top: 0; margin: 0 auto; width: 100%; height: 1080px; background: rgba(0,0,0,0.5);max-height: 100%; overflow-y: hidden; display:none}
 
 
