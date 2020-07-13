@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!--
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+-->
+<html lang="en">
+    
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Butler Motors</title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+		<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+		<script type="text/javascript">
+		function MM_swapImgRestore() { //v3.0
+			var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+		}
+		function MM_preloadImages() { //v3.0
+			var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+			var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+			if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+		}
+
+		function MM_findObj(n, d) { //v4.01
+			var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+			d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+			if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+			for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+			if(!x && d.getElementById) x=d.getElementById(n); return x;
+		}
+
+		function MM_swapImage() { //v3.0
+			var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+			if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+		}
+		</script>
+        
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript">
+    $(document).ready(function() {
+      $('#close').click(function() {
+        $('#pop').hide();
+      });
+    });
+		</script>
+        
+        
+    </head>
+    
+    <body onLoad="MM_preloadImages('images/bu_1_2.png','images/bu_sale_2.png','images/bu_repair_2.png','images/bu_2_2.png')">
+		<div class="first">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container">
+						<a href="#" class="brand">
+							<img src="images/Symbol.png" width="100" height="100" alt="Logo" />
+							<!-- This is website logo -->
+						</a>
+						<!-- Navigation button, visible on small resolution -->
+						<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+							<i class="icon-menu"></i>
+						</button>
+						<!-- Main navigation -->
+						<div class="nav-collapse collapse pull-right">
+							<ul class="nav" id="top-navigation">
+								<li class="active"><a href="#home">Home</a></li>
+								<li><a href="#service">신차판매</a></li>
+								<li><a href="#portfolio">정비접수</a></li>
+								<li><a href="#about">위치</a></li>
+							</ul>
+						</div>
+						<!-- End main navigation -->
+					</div>
+				</div>
+			</div>
+			<!-- Start home section -->
+			<div id="home">
+			  <div class="section">
+					<div class="container centered">
+						<img class="text-logo" src="images/text_logo.png" alt="Butler Logo">
+						<h1 style='margin-top:200px;'>차량구매? 유지? 수리?</h1>
+						<h3 style='margin-bottom:100px;'>더 버틀러 모터스가 한번에 해결해드립니다.</h3>
+					</div>
+				</div>
+			</div>
+			<!-- End home section -->
+	</div>
+		<!-- Start second section -->
+		<div class="second">
+		  <div class="section">
+				<div class="container">
+					<h2 style='margin-top:80px;'>신차 판매 구매하세요!</h2>
+					<p style='margin-bottom:80px;'>알맞은 차량을 저렴하게 장기 렌트 및 리스해서 구매하세요</p>
+                    
+					<a href="http://pf.kakao.com/_bisFj" target="_blank" onMouseOver="MM_swapImage('Image1','','images/bu_sale_2.png',1)" onMouseOut="MM_swapImgRestore()"><img id="Image1" width="100" src="images/bu_sale_1.png"></a>
+                    
+                    
+				</div>
+			</div>
+		</div>
+		<!-- End second section -->
+		<!-- Start third section -->
+		<div class="third">
+		  <div class="section">
+				<div class="container">
+					<h2 style='margin-top:80px;'>뛰어난 정비 기술력, 시설</h2>
+					<p style='margin-bottom:80px;'>수입차 정비 업체, 버틀러에서 합리적인 가격으로 만나보세요</p>
+                    
+					<a href="http://pf.kakao.com/_exhbFj" target="_blank" onMouseOver="MM_swapImage('Image1-2','','images/bu_repair_2.png',1)" onMouseOut="MM_swapImgRestore()"><img id="Image1-2" width="100" src="images/bu_repair_1.png"></a>
+                
+                
+                    
+				</div>
+			</div>
+		</div>
+		<!-- End third section -->
+		<!-- Start four section -->
+		<div id="service" class="four">
+           	  <div class="info-box-Benefit">
+                <h1>왜?</h1>
+                <h1>더 버틀러 모터스에서</h1>
+                <h1>신차 구매를 해야할까요?</h1>
+                <div class="why-text">
+                	<h3>신용 등급으로 이미 결정된 비용을 두고 아직도 조건 따지고 계시나요? 똑같은 리스도 버틀러가 하면 다릅니다! 차에 대해 알지 못해도 더 버틀러 모터스와 함께라면 걱정 없는 수입차 구매가 가능합니다!</h3>
+                </div>
+                <div class="colored-line"></div>
+                <p>&nbsp;</p>
+				
+                <div class="Benefit-wrap">
+                	<div class="service-box">
+						<div class="single-service-border">
+							<div class="service-icon-set">
+								<img src="images/Benefit_1.png" alt="">
+							</div>
+							<div class="info-box">
+								<h2>신차검수</h2>
+								<h3>전문 장비를 사용하여 베테랑 전문가가 직접 정확하고 꼼꼼하게 검수하여드립니다.</h3>
+							</div>
+						</div>
+					</div>
+                  <div class="service-box">
+					<div class="single-service-border">
+						<div class="service-icon-set">
+							<img src="images/Benefit_2.png" alt="">
+						</div>
+						<div class="info-box">
+							<h2>연 회원 관리</h2>
+							<h3>신차 구매 시 VIP 회원으로 등록되어 지속적인 유지 보수를 받을 수 있어 언제나 새것 같은 차량을 유지할 수 있습니다.</h3>
+						</div>
+					</div>
+                  </div>
+                  <div class="service-box">
+                   	<div class="single-service-border">
+						<div class="service-icon-set">
+							<img src="images/Benefit_3.png" alt="">
+						</div>
+						<div class="info-box">
+							<h2>다양한 이벤트</h2>
+							<h3>버틀러 만의 특별한 서비스를 다양한 이벤트 혜택을 통해 더 저렴한 가격으로 관리받으실 수 있습니다.</h3>
+						</div>
+                   	</div>
+                  </div>
+                </div>
+
+                <h2>모든 혜택을 지금 바로!</h2>
+                
+                <a href="javascript:void plusFriendChat()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/bu_1_2.png',1)"><img src="images/bu_1_1.png" name="Image2" id="Image2"></a>
+                
+<script type='text/javascript'>
+  //<![CDATA[
+    // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('4ab7ef63badd7fef4a8c03634f803956');
+    function plusFriendChat() {
+      Kakao.PlusFriend.chat({
+        plusFriendId: '_bisFj' // 플러스친구 홈 URL에 명시된 id로 설정합니다.
+      });
+    }
+  //]]>
+</script>
+                
+                
+                <p>&nbsp;</p>
+			</div>
+		</div>
+		<!-- End four section -->
+		<!-- Start five section -->
+	<div id="portfolio" class="five">
+			<!-- About us section end -->
+				<div class="about_us">
+					<div class="col">
+                    	<img src="images/introduce_img_1.gif" width="800" alt="">
+                    </div>
+                    <p>&nbsp;</p>
+					<h2>20년 이상의 전문가의 남다른 기술력</h2>
+					<h3>더 버틀러 모터스는 판금, 도장, 수리 등 경력 20년 이상의 베테랑 전문가 팀으로 이루어져 있습니다.</h3>
+				</div>
+		</div>
+		<!-- End five section -->
+        <!-- Start six section -->
+    <div id="price" class="section">
+            <div class="container">
+                <div class="title">
+                    <h1>회원제 운영</h1>
+                    <p>회원제 운영으로 더 많은 혜택을 드리기 위해 고객님께 집중합니다.</p>
+                </div>
+                <div class="price-table row-fluid">
+                    <div class="span6 price-column">
+                        <h3>일반 회원</h3>
+                        <ul class="list">
+                            <li><strong>엔진오일 교환시 공임무료</strong></li>
+                            <li><strong>자동차 수리시 공임 5% 할인</strong></li>
+                            <li><strong>왕복 딜리버리 서비스 50% 할인</strong></li>
+                            <li><strong>Summer/Winter 차량 정기 점검 무료</strong></li>
+                        </ul>
+                    </div>
+                    <div class="span6 price-column">
+                        <h3>VIP</h3>
+                        <ul class="list">
+                            <li><strong>엔진오일 교환시 공임무료</strong></li>
+                            <li><strong>자동차 수리시 공임 15% 할인</strong></li>
+                            <li><strong>왕복 딜리버리 서비스 무료 제공</strong></li>
+                            <li><strong>고객 요청시 작업 과정 알림 서비스</strong></li>
+                            <li><strong>교통사고 접수시 렌터카 현장대차 및 사후정리</strong></li>
+                            <li><strong>유리막코팅 광택 50% 할인</strong></li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+          <h2> </h2>
+            <a href="javascript:void plusFriendChat()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','images/bu_2_2.png',1)"><img id="Image22" src="images/bu_2_1.png"></a>  
+           
+<script type='text/javascript'>
+  //<![CDATA[
+    // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('706e284718b57e23d2cdae1d2992f083');
+    function plusFriendChat() {
+      Kakao.PlusFriend.chat({
+        plusFriendId: '_exhbFj' // 플러스친구 홈 URL에 명시된 id로 설정합니다.
+      });
+    }
+  //]]>
+</script>
+           
+           
+           
+            
+    </div>
+        <!-- End six section -->
+		<!-- Start seven section -->
+		<div class="seven">
+			<div class="row">
+				<div class="col">        
+					<div class="video_border">
+						<video width="660" controls poster="images/video_img.jpg" style="border: 2px solid #bcbcbc;">
+							<source src="video/butler_full.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End seven section -->
+		<!-- Start eight section -->
+		<div id="about" class="eight">
+			<div class="row">
+				<div class="col">
+					<div class="map_border" id="지점위치">
+						<h1>오시는 길</h1>
+                        
+                        
+       
+						<div class="tab">
+  <button class="tablinks active" onclick="moveCenter(event, 'tab1')">남구 정비소</button>
+  <button class="tablinks" onclick="moveCenter(event, 'tab2')">주례점</button>
+  <button class="tablinks" onclick="moveCenter(event, 'tab3')">서면점</button>
+  <button class="tablinks" onclick="moveCenter(event, 'tab4')">해운대점</button>
+</div>
+
+
+			
+<div id="tab1" class="tabcontent" style="display: block;">
+  <p id="branchAddress">부산시 남구 신선로 217-1</p>
+  <div id="mapContent" style="width:100%; text-align:center;">
+       <div id="map" style="width: 100%; height: 400px;"></div>              
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=706e284718b57e23d2cdae1d2992f083"></script>
+
+<script>
+var container = document.getElementById('map');
+var branch1 =  new daum.maps.LatLng(35.111044, 129.088137);
+
+var options = {
+	center: branch1,
+	draggable: false,
+    level: 3
+};		
+var map = new daum.maps.Map(container, options);
+map.setZoomable(true);
+var marker1 = new daum.maps.Marker({position: branch1});
+marker1.setMap(map);
+
+var infoWindowContent = '<div style="padding: 5px; color: black; text-align: center;">버틀러모터스</div>';
+var infoWindow1 = new daum.maps.InfoWindow({
+	position: branch1,
+	content: infoWindowContent
+});
+infoWindow1.open(map, marker1);
+
+var branch2 = new daum.maps.LatLng(35.154123, 129.010906);
+var branch3 = new daum.maps.LatLng(35.153779, 129.062190); 
+
+var marker2 = new daum.maps.Marker({position: branch2});
+var marker3 = new daum.maps.Marker({position: branch3});
+
+marker2.setMap(map);
+marker3.setMap(map);
+
+var infoNotLoaded = true;
+
+function moveCenter(evt, tabName) {
+	var i, tablinks;
+	
+	if (infoNotLoaded) {
+		var infoWindow2 = new daum.maps.InfoWindow({
+			position: branch2,
+			content: infoWindowContent
+		});
+		infoWindow2.open(map, marker2);
+		
+		var infoWindow3 = new daum.maps.InfoWindow({
+			position: branch3,
+			content: infoWindowContent
+		});
+		infoWindow3.open(map, marker3);
+		
+		
+		infoNotLoaded = true;
+	}
+	var mapContent = document.getElementById("mapContent");
+	var mapDiv = document.getElementById("map");
+	var branchAddress = document.getElementById("branchAddress");
+      if (tabName === "tab1") {
+		  map.setCenter(branch1);
+		  mapDiv.style.height = "400px";
+		  branchAddress.innerHTML = "부산시 남구 신선로 217-1";
+	  } else if (tabName === "tab2") {
+		  map.setCenter(branch2);
+		  mapDiv.style.height = "400px";
+		  branchAddress.innerHTML = "부산 사상구 백양대로 372-19 상가동 201호";
+	  } else if(tabName === "tab3") {
+		  map.setCenter(branch3);
+		  mapDiv.style.height = "400px";
+		  branchAddress.innerHTML = "부산 부산진구 동천로 55 CK빌딩 4층";
+	  } else if(tabName === "tab4") {
+		  mapDiv.style.height = "0px";
+		  branchAddress.innerHTML =  '<img src="images/map_haeundae.png" />';
+		  
+	  } else  {
+		  
+	  }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      evt.currentTarget.className += " active";
+}
+</script>
+ </div>
+</div>
+
+                        
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End eight section -->
+		
+		
+		<footer>
+			<div class="footer">
+				<div class="row">
+					<div class="col">
+						<div class="footer_img"><img src="images/logo.png" alt=""></div>
+						<div class="footer-text">
+						company name The Butler Motors owner 강직수 privacy officer 강직수 e-mail cloudkang74@naver.com business license 602-81-64018 online sales license 온라인-사업자 address (48553) 부산시 남구 신선로 217-1
+						</div>
+                        
+                        <div class="footer-text" id="sns_icon"><a href="#sns_icon" target="_blank"><img src="images/sns_fcb.png" alt="f">&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="https://blog.naver.com/cloudkang74" target="_blank"><img src="images/sns_blog.png" alt="b">&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="#sns_icon" target="_blank"><img src="images/sns_isg.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                       </div>
+                        
+				  </div>
+				</div>
+			</div>
+		</footer>
+		
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <i class="icon-up-open"></i>
+            </a>
+        </div>
+        <!-- ScrollUp button end -->
+        <!-- Include javascript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/tab.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/jquery.cslider.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+    <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+    <script type="text/javascript" src="js/app.js"></script>
+    
+    
+    
+	<div class="pop" id="pop">
+		<div style="height:350px;">
+    		<a href="javascript:void plusFriendChat()"><b><img src="images/popup_text.png"></b></a>
+
+    		<div id="close" style="width:100px; margin:auto;">close</div>
+		</div>
+
+		<div></div>
+	</div>
+
+        
+    
+</body>
+</html>
