@@ -80,6 +80,12 @@ ul.bxslider {
     }
         
     }
+@media (max-width:720px){
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        width: 3rem; 
+    }
+        
+    }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,

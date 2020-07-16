@@ -59,14 +59,15 @@ button{background: none; outline: none; border: none}
 .logo{float: left; padding: 12px 0; width: 6%}
 
 /*메뉴*/
-.menu_out{float: left; line-height: 89px; margin:0 auto; width: 90%; position: relative}
+.menu_out{float: left; line-height: 4.5; margin:0 auto; width: 90%; position: relative}
 .menu{width: 70%; margin: 0 auto; text-align: center}
 .menu:after{content: ""; display: block; clear: both}
-.menu>li>a{height: 89px; float: left; font-size: 1.2rem; color: #808080; font-family: SCDream5; width: 16%}
+.menu>li>a{float: left; font-size: 1.2rem; color: #808080; font-family: SCDream5; width: 16%}
 .menu>li:hover>a{color: #c3aa8f}
 .menu>li:hover .submenu{opacity: 1; z-index: 10}
 .submenu{width: 100%; height: 50px; position: absolute; top: 89px; left: 0;background-color: rgba(255,255,255,0.9); opacity: 0; transition: all 0.7s}
 .submenu_text{width: 90%; margin: 0 auto}
+.submenu_text:after{content: ""; display: block; clear: both}
 .submenu_text>li{width: 20%;float: left; text-align: center; line-height: 50px; padding: 0 0.5rem; transition: all 0.5s}
 .submenu_text>li>a{font-size: 0.8rem; color: #000; font-family: SCDream4}
 .submenu_text>li:hover a{color: #cba876}
@@ -79,12 +80,18 @@ button{background: none; outline: none; border: none}
     .header_top{display: none}
     .menu_bar{display: inline-block}
     .search{display: none}
-    .menu{display: none; margin-left: -10%; width: 120%; position: absolute; z-index: 99999; background: rgba(255,255,255,1); top: 5.5rem}
-    .menu>li{border-top: 1px solid #eee; width: 100%; }
+    .menu_out{line-height: 3}
+    .menu{display: none; margin-left: -10%; width: 120%; position: absolute; z-index: 99999; background: rgba(255,255,255,1); top: 5.5rem;}
+    .menu>li{border-top: 1px solid #eee; width: 100%}
     .menu>li:after{content: ""; display: block; clear: both}
-    .menu>li>a{height: 89px; float: none; font-size: 1.2rem; color: #808080; font-family: SCDream5; width: 100%}
-    .submenu{width: 100%; height: 50px; position:inherit; top: 89px; left: 0; background-color: rgba(0,0,0,0.2); opacity: 1; z-index: 99; transition: all 0.7s;}
-    .submenu_text>li>a{font-size: 1rem; color: #fff; font-family: SCDream4}
+    .menu>li>a{height: 0px; float: none; font-size: 1rem; color: #808080; font-family: SCDream5; width: 100%}
+    .submenu{width: 100%; position:static; margin: 0 auto; background-color: rgba(0,0,0,0.2); opacity: 1; z-index: 99; transition: all 0.7s;}
+    .submenu_text>li>a{font-size: 0.7rem; color: #fff; font-family: SCDream4}
+}
+
+@media (max-width:720px){
+    .menu{display: none; margin-left: -10%; width: 120%; position: absolute; z-index: 99999; background: rgba(255,255,255,1); top: 5.5rem;}
+    
 }
 
 
@@ -147,16 +154,30 @@ button{background: none; outline: none; border: none}
 #prevBtn{position:absolute;left:-40px;top:100px}
 #nextBtn{position:absolute;right:-40px;top:100px;} */
 
+@media (max-width:720px){
+    .box1 .inner>h1{font-size: 2rem}
+    .box1 .inner>p{font-size: 1rem}
+    #banner_wrap{position:relative; width:85%; height: 320px; margin:0 auto; margin-top: 40px}
+}
 
 /*box2*/
 .box2{width: 100%; height: 334px; background-image: url(../images/story.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover; position: relative}
-.box2_text{width: 45%; height: 205px; position: absolute; top: 70px; left: 50%; color: #fff}
-.box2_text>h5{font-size: 17px; color: #d8d8d8; font-family: NanumMyeongjo-Regular}
-.box2_text>h1{font-size: 25px; margin-top: 5px; font-family: NanumMyeongjo-Bold}
-.line{width: 30px; height: 2px; background-color: #fff; margin: 30px 0}
-.box2_text>p{font-size: 15px; color: #dcdcdc; line-height: 24px; font-family: NotoSansCJKkr-DemiLight}
-.box2_text>p span{font-size: 19px; font-family: NotoSansCJKkr-Medium}
+.box2_text{width: 45%; height: 205px; position: absolute; top: 18%; left: 50%; color: #fff}
+.box2_text>h5{font-size: 1.1rem; color: #d8d8d8; font-family: NanumMyeongjo-Regular}
+.box2_text>h1{font-size: 1.5rem; margin-top: 5px; font-family: NanumMyeongjo-Bold}
+.line{width: 2rem; height: 2px; background-color: #fff; margin: 1rem 0}
+.box2_text>p{font-size: 0.9rem; color: #dcdcdc; line-height: 24px; font-family: NotoSansCJKkr-DemiLight}
+.box2_text>p span{font-size: 1.2rem; font-family: NotoSansCJKkr-Medium}
 
+@media (max-width:720px){
+    .box2{width: 100%; height: 230px; background-image: url(../images/story2.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover; position: relative}
+    .box2_text{width: 68%; left: 30%;}
+    .box2_text>h5{font-size: 1rem;}
+    .box2_text>h1{font-size: 1.5rem}
+    .line{ height: 1px;margin: 0.8rem 0}
+    .box2_text>p{font-size: 0.8rem;line-height: 20px;}
+    .box2_text>p span{font-size: 0.8rem}
+}
 
 /*box3*/
 .box3{height: 75rem}
@@ -164,7 +185,7 @@ button{background: none; outline: none; border: none}
 .box3_set{margin-bottom: 95px}
 .box3_set:after{content: ""; display: block; clear: both}
 .text_line{height: 52px; font-size: 22px; color: #c3aa8f; border-bottom: 2px solid #b9b9b9; line-height: 52px; font-family: SCDream6}
-.video_img{width: 50%; height: 423px; float: left; overflow: hidden}
+.video_img{width: 50%; float: left; overflow: hidden}
 .video_img img{transform: scale(1); transition: all 0.5s}
 .video_img:hover img{transform: scale(1.05)}
 .video{width: 40%; float: right; padding: 0 5%}
@@ -179,9 +200,10 @@ button{background: none; outline: none; border: none}
 .magazine h2{font-size: 1.9rem; color: #474747; line-height: 2rem; padding: 20px 0; font-family: SCDream4}
 .magazine h5{font-size: 1.2rem; color: #6f6f6f; line-height: 2rem; padding-bottom: 2rem; font-family: SCDream3}
 .magazine p{font-size: 1rem; color: #c7b097; font-family: SCDream3}
-.magazine_btn{width: 156px; height: 36px; font-size: 14px; text-align: center; line-height: 36px; background-color: #9b897f; color: #fff; border: 2px solid #9b897f; margin-top: 55px; margin-left: 70.5%; font-family: SCDream6}
+.magazine_btn{width: 156px; height: 36px; font-size: 14px; text-align: center; line-height: 36px; background-color: #9b897f; color: #fff; border: 2px solid #9b897f; margin-top: 55px; float: right; font-family: SCDream6}
+.magazine_btn:after{content: ""; display: block; clear: both}
 .magazine_btn:hover{width: 156px; height: 36px; font-size: 14px; text-align: center; line-height: 36px; background-color: #fff; color: #9b897f; border: 2px solid #9b897f; margin-top: 55px}
-.magazine_img{width: 50%; height: 423px; float: right; overflow: hidden}
+.magazine_img{width: 50%; float: right; overflow: hidden}
 .magazine_img img{transform: scale(1); transition: all 0.5s}
 .magazine_img:hover img{transform: scale(1.05)}
 
@@ -195,6 +217,14 @@ button{background: none; outline: none; border: none}
         .magazine_img{width: 100%; height: 423px; float: none; overflow: hidden; margin-top: -800px}
         .magazine_img img{width: 100%;}
         .magazine_btn{width: 156px; height: 36px; font-size: 14px; text-align: center; line-height: 36px; background-color: #9b897f; color: #fff; border: 2px solid #9b897f; margin-top: 55px; margin-left: 0%; font-family: SCDream6}
+    }
+
+    @media (max-width:720px){
+        .box3{height: 93rem}
+        .magazine{margin-top: 300px}
+        .magazine_img{margin-top: -670px}
+        .video h2, .magazine h2{font-size: 1.5rem}
+        .magazine h5, .video h5{font-size: 0.9rem}
     }
 
 
@@ -212,6 +242,14 @@ button{background: none; outline: none; border: none}
         .box4_text{width: 55%; padding-left: 25px; position: absolute; top: 5rem; left: 35%; color: #fff}
         .box4_text>h1{font-size: 2.2rem}
         .box4_btn{ margin-top: 1.5rem}
+    }
+    @media (max-width:720px){
+        .box4{width: 100%; height: 230px; background-image: url(../images/editon2.jpg)}
+        .box4_text{width: 60%; padding-left: 25px; position: absolute; top: 2rem; left: 28%; color: #fff}
+        .text_box{width: 80px; height: 24px; font-size: 1rem; line-height: 24px}
+        .box4_text>p{font-size: 1rem; margin-top: 10px;}
+        .box4_text>h1{font-size: 1.12rem; line-height: 1.4; margin: 0.5rem 0;}
+        .box4_btn{ margin-top: 0.5rem}
     }
 
 /*box5*/
@@ -239,55 +277,92 @@ button{background: none; outline: none; border: none}
 #nextBtn2{position:absolute;right:0;top:10px; z-index: 999}
 /*#prevBtn2, #nextBtn2{display: inline-block; width: 55px; height: 165.2px; background: rgba(255,255,255,0.5); margin-top: -10px; padding-top: 80px}*/
 
-@media (max-width:960px){
-    
-    
-}
+    @media (max-width:960px){
+        .box5 .inner>p{font-size: 1.2rem}
+
+    }
+    @media (max-width:720px){
+        .box5 .inner>p{font-size: 0.9rem}
+    }
 
 /*풋터*/
 #footer{width: 100%; height: 168px; background-color: #f0f0f0; text-align: center; border-top: 1px solid #d7d7d7; padding: 40px 0}
 .f_menu{width: 50%; margin: 0 auto; margin-bottom: 25px; font-family: SCDream4}
 .f_menu:after{content: ""; display: block; clear: both}
-.f_menu li{float: left; height: 10px; line-height: 10px; border-right: 2px solid #b9b9b9; padding: 0 20px;width: 30%; box-sizing: border-box; margin-top: 15px; font-size: 1rem}
+.f_menu li{float: left; height: 10px; line-height: 10px; border-right: 2px solid #b9b9b9; padding: 0 20px; width: 33%; box-sizing: border-box; margin-top: 15px; font-size: 1rem}
 .f_menu li:nth-child(3){border-right: none; padding-right: 0}
-#footer .inner p{font-size: 15px; color: #696969; line-height: 24px; font-family: SCDream3}
+#footer .inner p{font-size: 0.8rem; color: #696969; line-height: 24px; font-family: SCDream3}
 #footer .inner p:nth-child(3){font-size: 11px; margin-top: 35px; font-family: SCDream4}
 
     @media (max-width:960px){
         .f_menu{width: 100%}
+        .f_menu li{ font-size: 0.8rem; width: 33.3%}
+    }
+    @media (max-width:720px){
+        .f_menu li{ font-size: 0.7rem}
+        #footer .inner p{font-size: 0.7rem;}
     }
 
 
 /*sub1*/
 /*브랜드_메인*/
 #brand_main{width: 100%; height: 466px; background-color: #c7bebf; position: relative}
-.b_main_img{width: 715px; height: 466px; background-image: url(../images/sub2_main.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover; position:absolute; right: 50%}
-#brand_main .inner{height: 466px; position: absolute; left: 5%; right: 5%}
-.b_main_text{width: 100%; text-align: center; padding: 80px 0}
-.b_main_text>h1{font-size: 39px; color: #f5e6dd; margin-bottom: 50px; font-family: SCDream6}
-.b_main_text>h4{font-size: 23px; color: #4b4b4b; font-family: NanumMyeongjo-Regular}
-.b_main_text>h2{font-size: 33px; color: #4b4b4b; margin: 10px 0; font-family: NanumMyeongjo-Bold}
-.b_main_bar{width: 30px; height: 2px; background-color: #5a5a5a; margin: 35px auto}
-.b_main_text>p{font-size: 17px; color: #2d2d2d; margin-bottom: 50px; font-family: NotoSansCJKkr-Light}
+.b_main_img{width: 50%; height: 466px; background-image: url(../images/sub2_main.jpg); background-repeat: no-repeat; background-position: bottom center; background-size: cover; position:absolute; right: 50%}
+#brand_main .inner{position: absolute; left: 0%; right: 0%}
+.b_main_text{text-align: center; padding-top: 7%}
+.b_main_text>h1{font-size: 2.5rem; color: #f5e6dd; margin-bottom: 5%; font-family: SCDream6}
+.b_main_text>h4{font-size: 1.5rem; color: #4b4b4b; font-family: NanumMyeongjo-Regular}
+.b_main_text>h2{font-size: 2rem; color: #4b4b4b; margin: 10px 0; font-family: NanumMyeongjo-Bold}
+.b_main_bar{width: 30px; height: 2px; background-color: #5a5a5a; margin: 1.5% auto}
+.b_main_text>p{font-size: 1.1rem; color: #2d2d2d; margin-bottom: 50px; font-family: NotoSansCJKkr-Light}
 
 /*브랜드_콘텐츠*/
 /*brand_main*/
-.inner_brand{width: 926px; margin: 0 auto; text-align: center}
-.brand_logo>h1{font-size: 18px; color: #c3aa8f; margin-top: 85px; font-family: SCDream6}
+.inner_brand{width: 70%; margin: 0 auto; text-align: center}
+.brand_logo>h1{font-size: 1.2rem; color: #c3aa8f; margin-top: 85px; font-family: SCDream6}
 .b_bar{width: 20px; height: 2px; background-color: #b9b9b9; margin: 25px auto}
 .logo_type:after{content: ""; display: block; clear: both; margin-bottom: 50px}
-.logo_name{font-size: 14px; color: #7d7d7d; padding: 32px 0; font-family: NotoSansCJKkr-Medium}
+.logo_name{font-size: 0.8rem; color: #7d7d7d; padding: 32px 0; font-family: NotoSansCJKkr-Medium}
+.logo_left img, .logo_right img{width:60%; margin: 0 auto; display: block}
 .logo_left{float: left; width: 50%}
 .logo_right{float: right; width: 50%}
-.brand_logo>p{font-size: 18px; color: #6f6f6f; font-family: SCDream3}
+.brand_logo>p{font-size: 1.1rem; color: #6f6f6f; font-family: SCDream3}
 .brand_btn{width: 186px; height: 36px; font-size: 14px; text-align: center; line-height: 36px; background-color: #9b897f; border: 2px solid #9b897f; margin: 40px auto; font-family: SCDream6}
 .brand_btn:hover{width: 186px; height: 36px; font-size: 14px; text-align: center; line-height: 36px; background-color: #fff; border: 2px solid #9b897f}
 .brand_btn a{color: #fff;}
 .brand_btn a:hover{color: #9b897f;}
 /*brand_color*/
-.brand_color>h1{font-size: 18px; color: #c3aa8f; margin-top: 85px; font-family: SCDream6}
-.brand_color>p{font-size: 18px; color: #6f6f6f; margin: 55px 0 136px 0; font-family: SCDream3}
+.brand_color img{width: 60%; margin: 0 auto; display: block}
+.brand_color>h1{font-size: 1.2rem; color: #c3aa8f; margin-top: 85px; font-family: SCDream6}
+.brand_color>p{font-size: 1.1rem; color: #6f6f6f; margin: 55px 0 136px 0; font-family: SCDream3}
 
+    @media (max-width:960px){
+        #brand_main{height: 360px}
+        .b_main_img{height: 360px}
+        .b_main_text{padding-top: 5%}
+        .b_main_text>h1{font-size: 2.5rem}
+        .b_main_text>h4{font-size: 1.5rem; color: #4b4b4b; font-family: NanumMyeongjo-Regular}
+        .b_main_text>h2{font-size: 2rem; color: #4b4b4b; margin: 10px 0; font-family: NanumMyeongjo-Bold}
+        
+        .inner_brand{width: 70%}
+        .logo_left, .logo_right{float: none; width: 100%; margin: 0 auto}
+        .brand_color img{width: 100%}
+        .brand_logo>p, .brand_color>p{font-size: 1rem}
+        
+    }
+    @media (max-width:720px){
+        .inner_brand{width: 90%}
+        #brand_main{height: 300px}
+        .b_main_img{height: 280px; margin-top: 20px}
+        .b_main_text{padding-top: 10%}
+        .b_main_text>h1{font-size: 2rem}
+        .b_main_text>h4{font-size: 1.2rem}
+        .b_main_text>h2{font-size: 1.5rem}
+        .b_main_text>p{font-size: 0.9rem; width: 65%; margin: 0 auto}
+        .logo_left img, .logo_right img{width: 100%}
+        .brand_logo>p, .brand_color>p{font-size: 0.9rem}
+        
+    }
 
 /*sub2*/
 
@@ -358,20 +433,36 @@ button{background: none; outline: none; border: none}
 /*sub6*/
 /*에디션_메인*/
 #edition_main{width: 100%; height: 372px; background-image: url(../images/edition_main.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover; text-align: center}
-#edition_main>h1{font-size: 39px; color: #ffe7cc; padding: 100px 0 70px 0; font-family: SCDream6}
-#edition_main>p{font-size: 19px; color: #fff; font-family: SCDream3}
+#edition_main>h1{font-size: 2.2rem; color: #ffe7cc; padding: 5% 0 3% 0; font-family: SCDream6}
+#edition_main>p{font-size: 1.1rem; line-height: 1.7; color: #fff; font-family: SCDream3}
 
 /*에디션_콘텐츠*/
-#edition_contents .inner{width: 1360px; margin: 35px auto}
+#edition_contents .inner{width: 70%; margin: 2rem auto}
 #edition_contents .inner:after{content: ""; display: block; clear: both}
 .year{border: none; color: #9b897f; font-weight: bold; float: right; font-family: SCDream3}
-.edition {width: 1414px; margin: 0 auto}
+.edition {width: 75%; margin: 0 auto}
 .edition:after{content: ""; display: block; clear: both}
-.edition_set{float: left; margin: 0 27px; padding: 40px 0}
-.edit_title{width: 415px; border-bottom: 1px solid #ebebeb; padding: 26px 0 10px 0; font-size: 18px; color: #5e5e5e; font-family: SCDream5}
-.edition_set>h5{font-size: 18px; color: #737373; margin: 12px 0; line-height: 30px; font-family: SCDream3}
-.edition_set>p{font-size: 14px; color: #c3aa8f; margin: 10px 0 90px 0; font-family: SCDream3}
+.edition_set{float: left; padding: 0 2%; box-sizing: border-box; width: 33.3%}
+.edition_set img{width: 100%}
+.edit_title{width: 100%; border-bottom: 1px solid #ebebeb; padding: 26px 0 10px 0; font-size: 18px; color: #5e5e5e; font-family: SCDream5}
+.edition_set>h5{font-size: 1rem; color: #737373; margin: 12px 0; line-height: 30px; font-family: SCDream3}
+.edition_set>p{font-size: 0.9rem; color: #c3aa8f; margin: 2% 0 20% 0; font-family: SCDream3}
 /*사진hover*/
 .edition_set>i>img{transform: scale(1); transition: all 0.5s}
-.edition_set>i{width: 418px; height: 310px; overflow: hidden}
+.edition_set>i{width: 100%; height: 310px; overflow: hidden}
 .edition_set:hover img{transform: scale(1.02)}
+
+
+    @media (max-width:960px){
+        #edition_main{height: 260px;}
+        #edition_contents .inner{width: 95%}
+        .edition {width: 95%}
+        .edition_set{width: 50%}
+    }
+    @media (max-width:720px){
+        #edition_main>h1{font-size: 2rem; color: #ffe7cc; padding: 5% 0 3% 0; font-family: SCDream6}
+        #edition_main>p{font-size: 0.9rem;width: 80%; margin: 0 auto}
+        .edition_set{float: none; width: 100%}
+        
+    }
+

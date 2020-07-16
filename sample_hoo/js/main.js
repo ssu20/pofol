@@ -2,7 +2,7 @@ $(function() {
     
      $('.bxslider > div').each(function(){   //1단계           
 
-        if ($(window).width() < 980) {
+        if ($(window).width() < 960) {
             //alert();
             var img = $(this).find('img'); //2단계  find ==> 선택자를 찾는 명령
             var img_pc = img.attr('src'); //3단계  
@@ -17,7 +17,7 @@ $(function() {
     }) ;
     
     $(window).resize(function(){ //윈도우 사이즈가 변형되면
-        if ($(window).width() < 980){ //만약 윈도우 사이즈가 980 보다 작으면
+        if ($(window).width() < 960){ //만약 윈도우 사이즈가 980 보다 작으면
 
            $('.menu').hide();  //'nav ul' 숨겨줘라
           
@@ -40,7 +40,6 @@ $(function() {
     
     
     
-    
     $('.menu_bar').click(function(){
       $('.menu').slideToggle();
     });
@@ -60,7 +59,7 @@ $(function() {
         speed: 500, // 이동 속도를 설정합니다.
         pager: true, // 현재 위치 페이징 표시 여부 설정.
         moveSlides: 1, // 슬라이드 이동시 갯수 설정.
-        slideWidth: 220, // 슬라이드 마다 너비 설정.
+        slideWidth: 225, // 슬라이드 마다 너비 설정.
         minSlides: 1, // 최소 노출 개수를 설정합니다.
         maxSlides: 5, // 최대 노출 개수를 설정합니다.
         slideMargin: 100, // 슬라이드간의 간격을 설정합니다.
