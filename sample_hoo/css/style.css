@@ -39,6 +39,7 @@ a{text-decoration: none}
 h1, h2, h3, h4, h5, h6{font-weight: normal}
 button{background: none; outline: none; border: none}
 .inner{width: 70%; margin: 0 auto}
+.submenu_text>li>a.seting{color:crimson}
 
 @media (max-width:960px){
     .inner{width: 95%; margin: 0 auto}
@@ -286,7 +287,7 @@ button{background: none; outline: none; border: none}
     }
 
 /*풋터*/
-#footer{width: 100%; height: 168px; background-color: #f0f0f0; text-align: center; border-top: 1px solid #d7d7d7; padding: 40px 0}
+#footer{width: 100%; background-color: #f0f0f0; text-align: center; border-top: 1px solid #d7d7d7; padding: 40px 0; box-sizing: border-box}
 .f_menu{width: 50%; margin: 0 auto; margin-bottom: 25px; font-family: SCDream4}
 .f_menu:after{content: ""; display: block; clear: both}
 .f_menu li{float: left; height: 10px; line-height: 10px; border-right: 2px solid #b9b9b9; padding: 0 20px; width: 33%; box-sizing: border-box; margin-top: 15px; font-size: 1rem}
@@ -329,16 +330,16 @@ button{background: none; outline: none; border: none}
 .brand_logo>p{font-size: 1.1rem; color: #6f6f6f; font-family: SCDream3}
 .brand_btn{width: 186px; height: 36px; font-size: 14px; text-align: center; line-height: 36px; background-color: #9b897f; border: 2px solid #9b897f; margin: 40px auto; font-family: SCDream6}
 .brand_btn:hover{width: 186px; height: 36px; font-size: 14px; text-align: center; line-height: 36px; background-color: #fff; border: 2px solid #9b897f}
-.brand_btn a{color: #fff;}
-.brand_btn a:hover{color: #9b897f;}
+.brand_btn{color: #fff;}
+.brand_btn:hover{color: #9b897f;}
 /*brand_color*/
 .brand_color img{width: 60%; margin: 0 auto; display: block}
 .brand_color>h1{font-size: 1.2rem; color: #c3aa8f; margin-top: 85px; font-family: SCDream6}
 .brand_color>p{font-size: 1.1rem; color: #6f6f6f; margin: 55px 0 136px 0; font-family: SCDream3}
 
     @media (max-width:960px){
-        #brand_main{height: 360px}
-        .b_main_img{height: 360px}
+        #brand_main{height: 380px}
+        .b_main_img{height: 30px}
         .b_main_text{padding-top: 5%}
         .b_main_text>h1{font-size: 2.5rem}
         .b_main_text>h4{font-size: 1.5rem; color: #4b4b4b; font-family: NanumMyeongjo-Regular}
@@ -385,47 +386,78 @@ button{background: none; outline: none; border: none}
 .category li:hover{color: #000}
 .product_set{width: 100%}
 .product_set:after{content: ""; display: block; clear: both}
-.product_text{float: left; width: 545px; margin: 85px 0 0 95px}
+.product_text{float: left; width: 40%; margin: 6% 0 0 7%}
 .product_text>h3{font-weight: 20px; color: #8d8d8d; margin-left: 8px; font-family: SCDream4}
 .product_text>h3 span{width: 48px; height: 18px; border: 1px solid #c3aa8f; font-size: 14px; color: #c3aa8f; margin-left: 15px}
-.product_text>h1{font-size: 36px; color: #c3aa8f; margin: 10px 0 5px 5px; font-family: SCDream4}
-.product_text>h2{font-size: 17px; color: #6f6f6f; margin-left: 8px; font-family: SCDream4}
+.product_text>h1{font-size: 2.2rem; color: #c3aa8f; margin: 10px 0 5px 5px; font-family: SCDream4}
+.product_text>h2{font-size: 1.1rem; color: #6f6f6f; margin-left: 8px; font-family: SCDream4}
 .product_bar{width: 100%; height: 2px; background-color: #b9b9b9; margin: 13px 0}
-.product_text>p{font-size: 14px; color: #454545; margin-left: 8px; line-height: 26px; font-family: SCDream3}
+.product_text>p{font-size: 0.9rem; color: #454545; margin-left: 8px; line-height: 26px; font-family: SCDream3}
 .product_btn{width: 156px; height: 36px; font-size: 14px; line-height: 36px; color: #9b897f; margin-top: 55px; margin-left: 5px; font-family: SCDream6}
 .product_btn:hover{color: #c3aa8f}
-.product_img{float: right; width: 50%}}
+.product_img{float: right; width: 50%}
 
 /*설명*/
 #product_detail{width: 100%}
-.tabbox{width: 1360px; margin: 0 auto; height: 40px}
+.tabbox{width: 100%; margin: 0 auto; height: 40px}
 .tabbox:after{content: ""; display: block; clear: both}
-.tabbox li{width: 33.33%; float: left; text-align: center; line-height: 40px; font-size: 16px; color: #828282; background-color: #f6f6f6; font-family: SCDream4}
-.tabbox li:nth-child(1){background-color: #fff}
-.tabbox li:hover{background-color: #fff}
-.product_box1{width: 1360px; margin: 0 auto; padding: 25px 0 70px 0; text-align: center}
-.p_detail_text{width: 940px; margin: 0 auto; text-align: left; padding: 60px 0 0 45px}
-.p_detail_text>h1{font-size: 33px; color: #4b4b4b; font-family: NanumMyeongjo-Bold}
-.p_detail_text>p{font-size: 16px; color: #828282; margin: 20px 0 60px 0;font-family: SCDream4}
-.p_detail_text>h2{font-size: 25px; color: #4b4b4b; font-family: NanumMyeongjo-Bold}
-.product_box2{width: 100%; margin: 0 auto; padding: 25px 0 70px 0; text-align: center; background-color: #f6f6f6}
+.tabbox li{width: 70%; margin: 0 auto}
+.tabbox li>a{width: 33.33%; float: left; text-align: center; line-height: 40px; font-size: 16px; color: #828282; background-color: #f6f6f6; font-family: SCDream4}
+.tabbox li>a.tabon{background-color: #fff}
+.tabbox li>a:hover{background-color: #fff}
+.product_box1{width: 70%; margin: 0 auto; padding: 25px 0 70px 0; text-align: center}
+.product_box1>i>img{width: 100%}
+.p_detail_text{width: 70%; margin: 0 auto; text-align: left; padding: 60px 0 0 45px}
+.p_detail_text>h1{font-size: 2rem; color: #4b4b4b; font-family: NanumMyeongjo-Bold}
+.p_detail_text>p{font-size: 1rem; color: #828282; margin: 20px 0 60px 0;font-family: SCDream4}
+.p_detail_text>h2{font-size: 1.5rem; color: #4b4b4b; font-family: NanumMyeongjo-Bold}
+.product_box2{width: 100%; margin: 0 auto; padding: 5% 0 10% 0; text-align: center; background-color: #f6f6f6}
 .product_box2 div{margin: 50px 0}
-.box1_overlap{width: 1360px; margin: 0 auto; padding: 30px 0 60px 0}
+.product_box2 div img{width: 70%}
+.box1_overlap{width:70%; margin: 0 auto; padding: 30px 0 60px 0}
 /*중복슬라이더*/
 /*box1슬라이드*/
 #banner_wrap3{position:relative; width:100%; height: 320px; margin:0 auto; margin-top: 40px}
 #slide_banner3 {text-align: center}
 #slide_banner3>img{width:100%}
 #slide_banner3 p:after{content: ""; display: block; clear: both}
-#slide_banner3 p span:nth-child(1){float: left; font-size: 18px; color: #828282; font-family: SCDream2}
-#slide_banner3 p span:nth-child(2){float: right; font-size: 15px; color: #8b8b8b; text-align: right}
+#slide_banner3 p span:nth-child(1){float: left; font-size: 1rem; color: #828282; font-family: SCDream2}
+#slide_banner3 p span:nth-child(2){float: right; font-size: 1rem; color: #8b8b8b; text-align: right}
 #slide_banner3 p span i{display: inline-block; padding: 0 10px}
-#slide_banner3 h3{text-align: left; font-size: 23px; color: #000; font-family: SCDream3}
-#prevBtn3{position:absolute;left:-40px;top:100px}
-#nextBtn3{position:absolute;right:-40px;top:100px;}
+#slide_banner3 h3{text-align: left; font-size: 1.4rem; color: #000; font-family: SCDream3}
+
+    @media (max-width:960px){
+        
+    }
+    @media (max-width:720px){
+        #product{height: 900px; padding-bottom: 2rem; box-sizing: border-box;}
+        .product_text{float: none; width: 95%; margin: 2rem auto}
+        .product_img{float: none; width: 100%; margin: 0 auto}
+        .product_img img{display: block; width: 100%}
+        .tabbox li{width: 95%; margin: 0 auto}
+        .product_box1{width: 95%}
+        .p_detail_text{width: 95%; margin: 0 auto; text-align: left; padding: 2rem 0 0 0}
+        .p_detail_text>h1{font-size: 1.8rem}
+        .p_detail_text>p{font-size: 0.8rem}
+        .p_detail_text>h2{font-size: 1.2rem}
+        .product_box2 div{margin: 2rem 0}
+        .product_box2 div img{width: 100%}
+        .box1_overlap{width:95%}
+        #banner_wrap3{position:relative; width:85%; height: 320px; margin:0 auto; margin-top: 40px}
+    }
+        
+.product_text>h3{font-weight: 20px; color: #8d8d8d; margin-left: 8px; font-family: SCDream4}
+.product_text>h3 span{width: 48px; height: 18px; border: 1px solid #c3aa8f; font-size: 14px; color: #c3aa8f; margin-left: 15px}
+.product_text>h1{font-size: 2.2rem; color: #c3aa8f; margin: 10px 0 5px 5px; font-family: SCDream4}
+.product_text>h2{font-size: 1.1rem; color: #6f6f6f; margin-left: 8px; font-family: SCDream4}
+.product_bar{width: 100%; height: 2px; background-color: #b9b9b9; margin: 13px 0}
+.product_text>p{font-size: 0.9rem; color: #454545; margin-left: 8px; line-height: 26px; font-family: SCDream3}
+
+    }
+
+
 
 /*sub5*/
-
 
 
 
